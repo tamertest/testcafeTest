@@ -3,7 +3,7 @@ import { Selector, t } from 'testcafe'
 fixture`Several Tests`
     .page`https://only-testing-blog.blogspot.com/2014/01/textbox.html`;
 
-test.only('Practice', async t => {
+test('Practice', async t => {
     await t.setTestSpeed(0.1)
     await check_page_loaded_and_submit_available()
     await check_existing_class();
